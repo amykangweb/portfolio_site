@@ -1,0 +1,42 @@
+/*
+Theme Name: My Portfolio Site
+Theme URI: http://localhost:3000
+Author: Amy Kang
+Author URI: http://amykang.com
+Description: My Personal Portfolio Site
+Version: 1.0
+*/
+
+/* Move down document body and navbar for wp admin bar */
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background: #F5F5F0 !important;
+}
+
+.admin-bar .navbar-fixed-top {
+  margin-top: 30px;
+}
+
+.navbar {
+  border: 0;
+  background: #fff;
+}
+
+.jumbotron {
+  margin-top: -5px;
+  height: 400px;
+  background: #fff;
+}
+
+.portfolio {
+  padding-top: 25px;
+  height: 500px;
+  background: yellow;
+  margin: 5px;
+}
+
+img.attachment-post-thumbnail:hover {
+  opacity: 0.5;
+}
