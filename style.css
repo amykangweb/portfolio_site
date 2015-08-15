@@ -7,12 +7,16 @@ Description: My Personal Portfolio Site
 Version: 1.0
 */
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 /* Move down document body and navbar for wp admin bar */
 
 body {
   padding-top: 50px;
   padding-bottom: 20px;
-  background: #F5F5F0 !important;
 }
 
 .admin-bar .navbar-fixed-top {
@@ -24,19 +28,72 @@ body {
   background: #fff;
 }
 
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .jumbotron {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #3A3A39;
   margin-top: -5px;
   height: 400px;
   background: #fff;
 }
 
-.portfolio {
-  padding-top: 25px;
-  height: 500px;
-  background: yellow;
+.full-width {
+  padding-top: 3em;
+  background: #F5F5F0 !important;
+}
+
+.portfolio-piece {
+  padding: 0;
+  background: #2E2E2E;
   margin: 5px;
 }
 
+.piece-image {
+  position: relative;
+  z-index: 100;
+}
+
+img.attachment-post-thumbnail {
+  max-width: 100%;
+  -webkit-transition: opacity 0.75s; /* Safari */
+  transition: opacity 0.75s;
+}
+
 img.attachment-post-thumbnail:hover {
-  opacity: 0.5;
+  opacity: 0.2;
+}
+
+.piece-info {
+  color: white;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  z-index: 0;
+  padding: 10px;
+}
+
+.category {
+  opacity: 0.75;
+  font-size: 1.5em;
+}
+
+.description {
+  opacity: 0.75;
+  word-wrap: break-word;
+}
+
+hr {
+  border: none;
+  width: 50%;
+  height: 4px;
+  background-color: #fff;
+  opacity: 0.75;
+}
+
+footer {
+  padding-top: 100px;
 }
