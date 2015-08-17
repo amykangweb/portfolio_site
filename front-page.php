@@ -11,7 +11,7 @@
 <div class="full-width">
   <div class="container">
     <!-- Example row of columns -->
-    <div class="row">
+    <div class="row row-centered">
 
       <?php
         $args = array(
@@ -23,7 +23,7 @@
 
       <?php if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-      <div class="col-sm-4 portfolio-piece text-center">
+      <div class="col-md-4 portfolio-piece col-centered">
       <!-- Image -->
         <span class="piece-image">
           <a href="<?php echo get_post_meta(get_the_ID(), 'link', TRUE); ?>">
