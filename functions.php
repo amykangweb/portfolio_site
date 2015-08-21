@@ -3,6 +3,7 @@
   function theme_styles() {
 
     wp_enqueue_style('bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css');
+    wp_enqueue_style('album_css', get_template_directory_uri() . '/css/album.css');
     wp_enqueue_style('google_font', "http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css");
     wp_enqueue_style('main_css', get_template_directory_uri() . '/style.css');
 
@@ -26,7 +27,6 @@ function theme_js() {
   $wp_scripts->add_data('viewport', 'conditional', 'lt IE 10');
 
   wp_enqueue_script('bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
-  wp_enqueue_script('app_js', get_template_directory_uri() . '/js/app.js', array('jquery'), '', true );
 }
 
 add_action('wp_enqueue_scripts', 'theme_js');

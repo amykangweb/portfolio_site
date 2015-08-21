@@ -10,40 +10,31 @@ Version: 1.0
 html, body {
   margin: 0;
   padding: 0;
+  background: url('images/rainy-seattle.jpg');
+  background-size: cover;
+  background-position: center 50%;
+  background-attachment: fixed;
 }
 
-/* Move down document body and navbar for wp admin bar */
-
-body {
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-
-.admin-bar .navbar-fixed-top {
-  margin-top: 30px;
-}
-
-.navbar {
-  border: 0;
-  background: #fff;
+a {
+  color: #fff !important;
 }
 
 .navbar-brand {
   font-family: 'Montserrat', sans-serif;
+  color: #fff !important;
+  margin-top: 5px;
 }
 
-.jumbotron {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: #3A3A39;
-  margin-top: -5px;
-  height: 400px;
-  background: #fff;
+.row {
+  padding-bottom: 60px;
 }
 
 .full-width {
   padding-top: 3em;
-  background: #F5F5F0 !important;
+  /*background: #F5F5F0 !important;*/
+  /*background: #2E2E2E !important;*/
+  background-color: rgba(46, 46, 46, 0.9) !important;
 }
 
 .row-centered {
@@ -81,7 +72,7 @@ img.attachment-post-thumbnail:hover {
 .piece-info {
   color: white;
   position: absolute;
-  top: 30%;
+  top: 25%;
   width: 100%;
   z-index: 0;
   padding: 10px;
@@ -103,8 +94,4 @@ hr {
   height: 4px;
   background-color: #fff;
   opacity: 0.75;
-}
-
-footer {
-  padding-top: 100px;
 }
