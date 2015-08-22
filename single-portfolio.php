@@ -1,18 +1,40 @@
+<!-- http://bryantwebdesign.com/code/previous-next-navigation-for-custom-post-types/ -->
 <!-- Return image object for current piece -->
 <?php $image = get_field('image'); ?>
+<?php $image2 = get_field('second-image'); ?>
 
 <?php get_header(); ?>
 
-    <div class="container">
+    <div class="container text-center single-piece">
       <div class="row">
-
-        <div class="col-md-12">
 
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-              <p><?php echo get_post_meta(get_the_ID(), 'description', TRUE); ?></p>
+              <?php if( is_singular('portfolio') ) { ?>
+                <div class="post-nav">
+                  <!-- Previous Post -->
+                  <span class="previous">
+                    <?php next_post_link( '%link', '&#10096;' ) ?>
+                  </span>
+                  <!-- Home -->
+                  <a href="<?php echo bloginfo('url'); ?>", class="home">&#9783;</a>
+                  <!-- Next Post -->
+                  <span class="next">
+                    <?php previous_post_link( '%link', '&#10097;' ) ?>
+                  </span>
+                </div>
+              <?php } ?>
+
+              <p class="single-piece-info">
+                <?php echo get_post_meta(get_the_ID(), 'description', TRUE); ?>
+              </p>
 
               <p><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"></p>
+
+              <!-- If Second Image exists, show image -->
+              <?php if( !empty($image2) ): ?>
+                  <p><img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" /></p>
+              <?php endif; ?>
 
           <?php endwhile; else : ?>
 

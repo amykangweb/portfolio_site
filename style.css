@@ -10,7 +10,7 @@ Version: 1.0
 html, body {
   margin: 0;
   padding: 0;
-  background: url('images/rainy-seattle.jpg');
+  background: url('images/rainy-seattle2.jpg');
   background-size: cover;
   background-position: center 50%;
   background-attachment: fixed;
@@ -20,10 +20,54 @@ a {
   color: #fff !important;
 }
 
+.post-nav {
+  font-size: 1.75em;
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.previous {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+a.home {
+  padding-top: -10px;
+}
+
+.next {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.post-nav a:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
 .navbar-brand {
   font-family: 'Orbitron', sans-serif;
   color: #fff !important;
   margin-top: 5px;
+}
+
+.single-piece {
+  position: relative;
+  top: 80px;
+  padding: 7px 0 0 0;
+  margin-bottom: 7rem;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.87);
+  background-color: rgba(46, 46, 46, 0.9);
+}
+
+.single-piece-info {
+  color: #fff !important;
+  font-size: 1.5em;
+  margin: 15px 0 20px 0;
 }
 
 .row {
