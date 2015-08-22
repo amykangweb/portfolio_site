@@ -1,3 +1,6 @@
+<!-- Return image object for current piece -->
+<?php $image = get_field('image'); ?>
+
 <?php get_header(); ?>
 
     <div class="container">
@@ -9,7 +12,7 @@
 
               <p><?php echo get_post_meta(get_the_ID(), 'description', TRUE); ?></p>
 
-              <p><?php the_post_thumbnail('large'); ?></p>
+              <p><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"></p>
 
           <?php endwhile; else : ?>
 

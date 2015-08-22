@@ -3,6 +3,9 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <section class="jumbotron text-center">
   <div class="container">
+    <div class="avatar">
+      <?php echo get_avatar('selene6023@gmail.com', '', '', 'Amy Kang', ''); ?>
+    </div>
     <h1 class="jumbotron-heading">Amy Kang</h1>
     <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
     <p>

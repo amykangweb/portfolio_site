@@ -1,6 +1,6 @@
 .navbar {
   background: #2E2E2E !important;
-  opacity: 0.75;
+  opacity: 0.9;
   position: absolute !important;
   width: 100%;
   margin-top: -5px;
@@ -47,22 +47,27 @@
   padding-top: 6rem;
   padding-bottom: 6rem;
   margin-bottom: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
   /*color: #3A3A39;*/
   color: #fff !important;
   margin-top: -5px;
   height: 600px;
   background: transparent !important;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.87);
 }
 
 .jumbotron p:last-child {
   margin-bottom: 0;
 }
 
+div.avatar img {
+  border-radius: 50%;
+  margin-top: 4em;
+}
+
 .jumbotron-heading {
+  font-family: 'Orbitron', sans-serif;
   font-weight: 700;
-  margin-top: 5.75rem;
+  margin-top: 1rem;
 }
 
 .jumbotron .container {
