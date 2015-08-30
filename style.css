@@ -1,8 +1,8 @@
 /*
 Theme Name: My Portfolio Site
-Theme URI: http://localhost:3000
+Theme URI: http://amy-kang.com
 Author: Amy Kang
-Author URI: http://amykang.com
+Author URI: http://amy-kang.com
 Description: My Personal Portfolio Site
 Version: 1.0
 */
@@ -26,6 +26,15 @@ a {
   margin: 0 auto;
   margin-bottom: 10px;
   padding-bottom: 5px;
+}
+
+p.icons a {
+  margin: 5px;
+}
+
+p.icons a:hover {
+  opacity: 0.5;
+  text-decoration: none;
 }
 
 .previous {

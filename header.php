@@ -21,15 +21,31 @@
     <div class="navbar-collapse collapse inverse" id="navbar-header">
       <div class="container-fluid">
         <div class="about">
-          <h4>About</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          <h4>About Me</h4>
+          <p class="text-muted">
+            I like figuring out how things work.
+            <br>
+            I'm always working on something.
+          </p>
         </div>
         <div class="social">
           <h4>Contact</h4>
           <ul class="list-unstyled">
-            <li><a href="#">Follow on Twitter</a></li>
-            <li><a href="#">Like on Facebook</a></li>
-            <li><a href="#">Email me</a></li>
+            <li>
+              <a href="https://www.linkedin.com/pub/amy-kang/90/267/415" target="_blank">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/amykangweb" target="_blank">
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="mailto:selene6023@gmail.com">
+                Email me
+              </a>
+            </li>
           </ul>
         </div>
       </div>

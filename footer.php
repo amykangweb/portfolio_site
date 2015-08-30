@@ -4,7 +4,7 @@
         <a href="#">Back to top</a>
       </p>
       <p>&copy; Amy Kang 2015</p>
-      <p>This site is powered by <a href="https://wordpress.org/">Wordpress</a>.</p>
+      <p>This site is powered by <a href="https://wordpress.org/">WordPress</a>.</p>
     </div>
   </footer>
 

@@ -2,6 +2,7 @@
 <!-- Return image object for current piece -->
 <?php $image = get_field('image'); ?>
 <?php $image2 = get_field('second-image'); ?>
+<?php $site = get_field('site'); ?>
 
 <?php get_header(); ?>
 
@@ -27,6 +28,13 @@
 
               <p class="single-piece-info">
                 <?php echo get_post_meta(get_the_ID(), 'description', TRUE); ?>
+                <?php if( !empty($site) ): ?>
+                  <p>
+                    <a href="<?php echo $site; ?>" target="_blank">
+                      Visit Site
+                    </a>
+                  </p>
+                <?php endif; ?>
               </p>
 
               <p><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"></p>

@@ -7,10 +7,20 @@
       <?php echo get_avatar('selene6023@gmail.com', '', '', 'Amy Kang', ''); ?>
     </div>
     <h1 class="jumbotron-heading">Amy Kang</h1>
-    <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-    <p>
-      <a href="#" class="btn btn-primary">Main call to action</a>
-      <a href="#" class="btn btn-secondary">Secondary action</a>
+    <p class="lead text-muted">
+      What makes the desert beautiful is that somewhere it hides a well.<br>
+      - Antoine de Saint-Exupery
+    </p>
+    <p class="icons">
+      <a href="https://www.linkedin.com/pub/amy-kang/90/267/415" target="_blank">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/linked-lg.png" alt="LinkedIn">
+      </a>
+       <a href="https://github.com/amykangweb" target="_blank">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/git-lg.png" alt="Github">
+      </a>
+       <a href="mailto: selene6023@gmail.com" target="_blank">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/mail-lg.png" alt="Email">
+      </a>
     </p>
   </div>
 </section>
@@ -28,13 +38,13 @@
 
         $the_query = new WP_Query($args);
       ?>
-
+      <!-- Portfolio Thumbnails -->
       <?php if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
       <div class="col-md-4 portfolio-piece col-centered">
       <!-- Image -->
         <span class="piece-image">
-          <a href="<?php echo get_post_meta(get_the_ID(), 'link', TRUE); ?>">
+          <a href="<?php the_permalink(); ?>">
             <?php the_post_thumbnail(); ?>
           </a>
         </span>
