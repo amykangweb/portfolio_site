@@ -41,7 +41,7 @@
       <!-- Portfolio Thumbnails -->
       <?php if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-      <div class="col-md-4 portfolio-piece col-centered">
+      <div class="col-lg-4 portfolio-piece col-centered">
       <!-- Image -->
         <span class="piece-image">
           <a href="<?php the_permalink(); ?>">

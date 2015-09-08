@@ -37,7 +37,7 @@
                 <?php endif; ?>
               </p>
 
-              <p><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"></p>
+              <p><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="image-responsive"></p>
 
               <!-- If Second Image exists, show image -->
               <?php if( !empty($image2) ): ?>
