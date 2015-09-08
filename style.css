@@ -64,6 +64,10 @@ a.home {
   margin-top: 5px;
 }
 
+.piece-image img {
+  max-width: 100%;
+}
+
 .single-piece {
   position: relative;
   top: 80px;
@@ -71,12 +75,20 @@ a.home {
   margin-bottom: 7rem;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.87);
   background-color: rgba(46, 46, 46, 0.9);
+  max-width: 90%;
+}
+
+.single-piece img {
+    max-width: 90%;
+    margin-top: 20px;
 }
 
 .single-piece-info {
   color: #fff !important;
   font-size: 1.5em;
   margin: 15px 0 20px 0;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .row {
