@@ -95,6 +95,14 @@ a.home {
   margin-top: 40px;
 }
 
+.blog-page h2 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.datetime {
+  font-family: 'Orbitron', sans-serif;
+}
+
 .row {
   padding-bottom: 60px;
 }
