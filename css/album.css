@@ -98,9 +98,10 @@ div.avatar img {
 }
 
 footer {
+  width: 100%;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background: #2E2E2E !important
+  background: #2E2E2E !important;
 }
 
 footer p {

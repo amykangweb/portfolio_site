@@ -85,10 +85,14 @@ a.home {
 
 .single-piece-info {
   color: #fff !important;
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin: 15px 0 20px 0;
   max-width: 90%;
   margin: 0 auto;
+}
+
+.blog-page {
+  margin-top: 40px;
 }
 
 .row {
