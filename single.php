@@ -12,7 +12,10 @@
             <?php the_time('F jS, Y'); ?>
           </p>
 
-        <?php the_content(); ?>
+        <div class="blog-content"><?php the_content(); ?></div>
+
+        <span class="previous-post"><?php previous_post_link(); ?></span>
+        <span class="next-post"><?php next_post_link(); ?></span>
 
       </div>
 
