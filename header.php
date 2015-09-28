@@ -27,6 +27,7 @@
             <br>
             I'm always working on something.
           </p>
+          <a href="<?php echo get_permalink( get_option( 'page_for_posts' )); ?>">Visit My Blog</a>
         </div>
         <div class="social">
           <h4>Contact</h4>
@@ -47,11 +48,6 @@
               </a>
             </li>
           </ul>
-          <div class="blog">
-            <h4>
-              <a href="<?php echo get_permalink( get_option( 'page_for_posts' )); ?>">Blog</a>
-            </h4>
-          </div>
         </div>
       </div>
     </div>

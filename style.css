@@ -92,6 +92,7 @@ a.home {
 }
 
 .blog-page {
+  position: relative;
   margin-top: 40px;
 }
 
@@ -171,4 +172,22 @@ hr {
   height: 4px;
   background-color: #fff;
   opacity: 0.75;
+}
+
+/* Blog Page Styles */
+
+.blog-content {
+  margin-bottom: 40px;
+}
+
+.previous-post {
+  position: absolute;
+  bottom: -70px;
+  left: 20px;
+}
+
+.next-post {
+  position: absolute;
+  bottom: -70px;
+  right: 20px;
 }
